@@ -20,5 +20,4 @@
 - ✅ Alomofire - AlamofireImage
 
 
-## Nice to have
-- Refactor spaghetti code 
+
