@@ -45,6 +45,10 @@ extension PokemonDetailViewController: UITableViewDataSource {
     cell.textLabel?.text = viewModel.abilityName(indexPath: indexPath).capitalized
     return cell
   }
+  
+  func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    return "Abilities"
+  }
 }
 
 // MARK: - PokemonDetailViewDelegate
