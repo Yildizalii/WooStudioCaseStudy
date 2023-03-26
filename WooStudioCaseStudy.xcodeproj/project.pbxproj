@@ -56,15 +56,39 @@
 		410F5A5E29D06B64007866FF /* WooStudioCaseStudy */ = {
 			isa = PBXGroup;
 			children = (
-				410F5A5F29D06B64007866FF /* AppDelegate.swift */,
-				410F5A6129D06B64007866FF /* SceneDelegate.swift */,
-				410F5A6329D06B64007866FF /* ViewController.swift */,
-				410F5A6529D06B64007866FF /* Main.storyboard */,
-				410F5A6829D06B65007866FF /* Assets.xcassets */,
+				410F5A7529D06C5B007866FF /* AppDelegate */,
+				410F5A7429D06C43007866FF /* Scenes */,
 				410F5A6A29D06B65007866FF /* LaunchScreen.storyboard */,
-				410F5A6D29D06B65007866FF /* Info.plist */,
+				410F5A7329D06BA7007866FF /* Resources */,
 			);
 			path = WooStudioCaseStudy;
+			sourceTree = "<group>";
+		};
+		410F5A7329D06BA7007866FF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				410F5A6829D06B65007866FF /* Assets.xcassets */,
+				410F5A6D29D06B65007866FF /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		410F5A7429D06C43007866FF /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				410F5A6329D06B64007866FF /* ViewController.swift */,
+				410F5A6529D06B64007866FF /* Main.storyboard */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		410F5A7529D06C5B007866FF /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				410F5A5F29D06B64007866FF /* AppDelegate.swift */,
+				410F5A6129D06B64007866FF /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +313,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JGHQB59FYZ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WooStudioCaseStudy/Info.plist;
+				INFOPLIST_FILE = WooStudioCaseStudy/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +341,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JGHQB59FYZ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = WooStudioCaseStudy/Info.plist;
+				INFOPLIST_FILE = WooStudioCaseStudy/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
