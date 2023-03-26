@@ -11,17 +11,14 @@
 
 
 ## Project Tech Stack
-* Xcode: Version 12.5.1 
-* Language: Swift 5.4.2
-* Minimum iOS Version: 14.5
+* Xcode: Version 13.4.1 
 * Powered by ❤️
 
 ## Requirements
-- ✅ Use Clases
-- ✅ Segue
-- ✅ Funciton
-- ✅ If condition
+- ✅ Use MVVM
+- ✅ Protocol Oriented Programming
+- ✅ Alomofire - AlamofireImage
+- 
 
 ## Nice to have
-- Reimplement with up to date design patten(MVVM, MVC)
 - Refactor spaghetti code 
