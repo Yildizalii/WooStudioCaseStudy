@@ -9,21 +9,28 @@
 /* Begin PBXBuildFile section */
 		410F5A6029D06B64007866FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410F5A5F29D06B64007866FF /* AppDelegate.swift */; };
 		410F5A6229D06B64007866FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410F5A6129D06B64007866FF /* SceneDelegate.swift */; };
-		410F5A6429D06B64007866FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410F5A6329D06B64007866FF /* ViewController.swift */; };
-		410F5A6729D06B64007866FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 410F5A6529D06B64007866FF /* Main.storyboard */; };
 		410F5A6929D06B65007866FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 410F5A6829D06B65007866FF /* Assets.xcassets */; };
 		410F5A6C29D06B65007866FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 410F5A6A29D06B65007866FF /* LaunchScreen.storyboard */; };
+		410F5A7729D06E8F007866FF /* Pokemon.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 410F5A7629D06E8F007866FF /* Pokemon.storyboard */; };
+		410F5A7929D06EAB007866FF /* PokemonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410F5A7829D06EAB007866FF /* PokemonsViewController.swift */; };
+		410F5A7B29D071F0007866FF /* PokemonListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410F5A7A29D071F0007866FF /* PokemonListViewModel.swift */; };
+		410F5A7E29D076E2007866FF /* PokemonListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410F5A7D29D076E2007866FF /* PokemonListResponse.swift */; };
+		410F5A8329D07E68007866FF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410F5A8229D07E68007866FF /* NetworkService.swift */; };
+		410F5A8629D07F16007866FF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 410F5A8529D07F16007866FF /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		410F5A5C29D06B64007866FF /* WooStudioCaseStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WooStudioCaseStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		410F5A5F29D06B64007866FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		410F5A6129D06B64007866FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		410F5A6329D06B64007866FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		410F5A6629D06B64007866FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		410F5A6829D06B65007866FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		410F5A6B29D06B65007866FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		410F5A6D29D06B65007866FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		410F5A7629D06E8F007866FF /* Pokemon.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pokemon.storyboard; sourceTree = "<group>"; };
+		410F5A7829D06EAB007866FF /* PokemonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonsViewController.swift; sourceTree = "<group>"; };
+		410F5A7A29D071F0007866FF /* PokemonListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListViewModel.swift; sourceTree = "<group>"; };
+		410F5A7D29D076E2007866FF /* PokemonListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListResponse.swift; sourceTree = "<group>"; };
+		410F5A8229D07E68007866FF /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				410F5A8629D07F16007866FF /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,8 +65,8 @@
 			isa = PBXGroup;
 			children = (
 				410F5A7529D06C5B007866FF /* AppDelegate */,
+				410F5A8129D07E30007866FF /* Network */,
 				410F5A7429D06C43007866FF /* Scenes */,
-				410F5A6A29D06B65007866FF /* LaunchScreen.storyboard */,
 				410F5A7329D06BA7007866FF /* Resources */,
 			);
 			path = WooStudioCaseStudy;
@@ -76,8 +84,9 @@
 		410F5A7429D06C43007866FF /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				410F5A6329D06B64007866FF /* ViewController.swift */,
-				410F5A6529D06B64007866FF /* Main.storyboard */,
+				410F5A7629D06E8F007866FF /* Pokemon.storyboard */,
+				410F5A7F29D07DF8007866FF /* Launch */,
+				410F5A8029D07E14007866FF /* List */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -89,6 +98,40 @@
 				410F5A6129D06B64007866FF /* SceneDelegate.swift */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		410F5A7C29D076C5007866FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				410F5A7D29D076E2007866FF /* PokemonListResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		410F5A7F29D07DF8007866FF /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				410F5A6A29D06B65007866FF /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		410F5A8029D07E14007866FF /* List */ = {
+			isa = PBXGroup;
+			children = (
+				410F5A7C29D076C5007866FF /* Model */,
+				410F5A7829D06EAB007866FF /* PokemonsViewController.swift */,
+				410F5A7A29D071F0007866FF /* PokemonListViewModel.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		410F5A8129D07E30007866FF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				410F5A8229D07E68007866FF /* NetworkService.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,6 +150,9 @@
 			dependencies = (
 			);
 			name = WooStudioCaseStudy;
+			packageProductDependencies = (
+				410F5A8529D07F16007866FF /* Alamofire */,
+			);
 			productName = WooStudioCaseStudy;
 			productReference = 410F5A5C29D06B64007866FF /* WooStudioCaseStudy.app */;
 			productType = "com.apple.product-type.application";
@@ -135,6 +181,9 @@
 				Base,
 			);
 			mainGroup = 410F5A5329D06B64007866FF;
+			packageReferences = (
+				410F5A8429D07F16007866FF /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 410F5A5D29D06B64007866FF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -150,8 +199,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				410F5A6C29D06B65007866FF /* LaunchScreen.storyboard in Resources */,
+				410F5A7729D06E8F007866FF /* Pokemon.storyboard in Resources */,
 				410F5A6929D06B65007866FF /* Assets.xcassets in Resources */,
-				410F5A6729D06B64007866FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,8 +211,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				410F5A6429D06B64007866FF /* ViewController.swift in Sources */,
+				410F5A7929D06EAB007866FF /* PokemonsViewController.swift in Sources */,
 				410F5A6029D06B64007866FF /* AppDelegate.swift in Sources */,
+				410F5A7E29D076E2007866FF /* PokemonListResponse.swift in Sources */,
+				410F5A7B29D071F0007866FF /* PokemonListViewModel.swift in Sources */,
+				410F5A8329D07E68007866FF /* NetworkService.swift in Sources */,
 				410F5A6229D06B64007866FF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,14 +223,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		410F5A6529D06B64007866FF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				410F5A6629D06B64007866FF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		410F5A6A29D06B65007866FF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -316,7 +360,7 @@
 				INFOPLIST_FILE = WooStudioCaseStudy/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Pokemon;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -344,7 +388,7 @@
 				INFOPLIST_FILE = WooStudioCaseStudy/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Pokemon;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -382,6 +426,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		410F5A8429D07F16007866FF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		410F5A8529D07F16007866FF /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 410F5A8429D07F16007866FF /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 410F5A5429D06B64007866FF /* Project object */;
 }
