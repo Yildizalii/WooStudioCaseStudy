@@ -39,6 +39,46 @@
             </objects>
             <point key="canvasLocation" x="328" y="80"/>
         </scene>
+        <!--Pokemon Detail View Controller-->
+        <scene sceneID="Z9x-NM-mOh">
+            <objects>
+                <viewController storyboardIdentifier="PokemonDetailViewController" id="MDC-DV-0Oc" customClass="PokemonDetailViewController" customModule="WooStudioCaseStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Ih-XP-j0Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vSl-5X-874">
+                                <rect key="frame" x="132" y="60" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vSl-5X-874" secondAttribute="height" multiplier="1:1" id="QlM-mc-HzJ"/>
+                                    <constraint firstAttribute="width" constant="150" id="qX4-WD-hqO"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="smV-P9-ly8">
+                                <rect key="frame" x="0.0" y="242" width="414" height="620"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OLT-pu-dg8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OLT-pu-dg8" firstAttribute="bottom" secondItem="smV-P9-ly8" secondAttribute="bottom" id="CNF-LY-r6q"/>
+                            <constraint firstItem="OLT-pu-dg8" firstAttribute="trailing" secondItem="smV-P9-ly8" secondAttribute="trailing" id="Cg9-ov-Omm"/>
+                            <constraint firstItem="vSl-5X-874" firstAttribute="centerX" secondItem="5Ih-XP-j0Y" secondAttribute="centerX" id="M5x-sp-CPT"/>
+                            <constraint firstItem="smV-P9-ly8" firstAttribute="top" secondItem="vSl-5X-874" secondAttribute="bottom" constant="32" id="Uge-Jl-8b0"/>
+                            <constraint firstItem="smV-P9-ly8" firstAttribute="leading" secondItem="OLT-pu-dg8" secondAttribute="leading" id="b3n-jk-JvW"/>
+                            <constraint firstItem="vSl-5X-874" firstAttribute="top" secondItem="OLT-pu-dg8" secondAttribute="top" constant="16" id="hfJ-Vt-ELo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pokemonImageView" destination="vSl-5X-874" id="3cQ-m6-Zlf"/>
+                        <outlet property="tableView" destination="smV-P9-ly8" id="hgq-vk-vMY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9xb-ro-jkF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1278.2608695652175" y="79.6875"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="4i3-wA-3ze">
             <objects>

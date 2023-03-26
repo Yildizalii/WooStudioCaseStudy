@@ -47,7 +47,7 @@ extension PokemonsViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = UITableViewCell()
     let item = viewModel.pokemonName(indexPath: indexPath)
-    cell.textLabel?.text = item.name
+    cell.textLabel?.text = item.name.capitalized
     return cell
   }
 }
@@ -56,7 +56,17 @@ extension PokemonsViewController: UITableViewDataSource {
 extension PokemonsViewController: UITableViewDelegate {
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    print(indexPath.row)
+    let storyboard = UIStoryboard(name: "Pokemon", bundle: nil)
+    if let detailVC = storyboard.instantiateViewController(withIdentifier: "PokemonDetailViewController") as? PokemonDetailViewController {
+      let selectedPokemonName = viewModel.pokemonName(indexPath: indexPath).name
+      
+      let viewModel = PokemonDetailViewModel(name: selectedPokemonName)
+      
+      detailVC.viewModel = viewModel
+      
+      navigationController?.pushViewController(detailVC, animated: true)
+    }
+    
   }
 }
 

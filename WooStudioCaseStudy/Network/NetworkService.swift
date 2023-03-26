@@ -25,4 +25,20 @@ class NetworkService {
       }
     }
   }
+  
+  
+  func fetchPokemonDetail(name: String, completion: @escaping (Result<PokemonDetailResponse, Error>) -> Void) {
+    let urlString = baseURLString + "/pokemon/" + name
+    
+    AF.request(urlString).responseDecodable(of: PokemonDetailResponse.self) { response in
+      
+      switch response.result {
+      case .success(let data):
+        completion(.success(data))
+        
+      case .failure(let error):
+        completion(.failure(error))
+      }
+    }
+  }
 }
