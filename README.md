@@ -18,7 +18,7 @@
 - ✅ Use MVVM
 - ✅ Protocol Oriented Programming
 - ✅ Alomofire - AlamofireImage
-- 
+
 
 ## Nice to have
 - Refactor spaghetti code 
